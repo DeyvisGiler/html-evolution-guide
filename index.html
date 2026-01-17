@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolución de HTML - Inicio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- NO HAY ESTILOS CSS PERSONALIZADOS -->
+</head>
+
+<body class="bg-light text-dark" id="body">
+    <!-- Barra de navegación responsiva -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/HTML5_logo.png" alt="Logo HTML5" class="me-2" style="height: 40px;">
+                <span class="fw-bold">Evolución de HTML</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="bi bi-house-door me-1"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html"><i class="bi bi-clock-history me-1"></i>Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="versiones.html"><i class="bi bi-layers me-1"></i>Versiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparativa.html"><i class="bi bi-bar-chart me-1"></i>Comparativa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"><i class="bi bi-envelope me-1"></i>Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- Botón de cambio de tema -->
+                <button class="btn btn-outline-secondary" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="bi bi-sun" id="sunIcon"></i>
+                    <i class="bi bi-moon d-none" id="moonIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary bg-opacity-10 py-5" id="heroSection">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Explora la Evolución del <span
+                            style="color: #e34c26; font-weight: bold;">HTML</span></h1>
+                    <p class="lead mb-4">Desde su creación en 1991 por Tim Berners-Lee hasta la actualidad, HTML ha
+                        transformado la web. Descubre cómo este lenguaje ha evolucionado para dar forma a internet.</p>
+                    <a href="historia.html" class="btn btn-primary btn-lg px-4"><i
+                            class="bi bi-play-circle me-2"></i>Comenzar el Viaje</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/photo-1627398242454-45a1465c2479.avif" alt="Desarrollo web"
+                        class="img-fluid rounded shadow" style="max-height: 400px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <section>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-info-circle text-primary fs-4"></i>
+                                </div>
+                                <h3 class="card-title h4 mb-0">Introducción al HTML</h3>
+                            </div>
+                            <p class="card-text">
+                                <span style="color: #e34c26; font-weight: bold;">HTML</span> (HyperText Markup Language)
+                                es el lenguaje estándar utilizado para crear páginas web y describe la estructura básica
+                                mediante el uso de etiquetas.
+                            </p>
+                            <p class="card-text">
+                                Desde su creación en 1991 por Tim Berners-Lee, HTML ha evolucionado significativamente,
+                                adaptándose a las necesidades cambiantes de la web y sus usuarios.
+                            </p>
+                            <div class="alert alert-info mt-3">
+                                <i class="bi bi-lightbulb me-2"></i>
+                                <strong>¿Sabías que?</strong> La primera versión de HTML tenía solo alrededor de 20
+                                etiquetas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-bullseye text-success fs-4"></i>
+                                </div>
+                                <h3 class="card-title h4 mb-0">Objetivo de nuestro sitio Web</h3>
+                            </div>
+                            <p class="card-text">
+                                Este sitio es creado con el objetivo de demostrar la evolución que ha experimentado HTML
+                                desde su creación hasta la actualidad, describiendo los cambios más significativos que
+                                ha tenido.
+                            </p>
+                            <p class="card-text">
+                                Explora las diferentes secciones para aprender sobre la historia de HTML, sus versiones
+                                y una comparativa entre ellas.
+                            </p>
+                            <ul class="list-group list-group-flush mt-3">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Historia completa del HTML
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Análisis de todas las versiones
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Comparativa detallada
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel de versiones destacadas -->
+            <div class="mt-5">
+                <h2 class="text-center mb-4">Versiones Destacadas</h2>
+                <div id="versionsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="card text-center h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">HTML 1.0</h5>
+                                            <p class="card-text">1991 - La primera versión con alrededor de 20 etiquetas
+                                                básicas.</p>
+                                            <span class="badge bg-secondary">Primera</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-center h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">HTML 4.01</h5>
+                                            <p class="card-text">1999 - Separación de contenido y presentación.</p>
+                                            <span class="badge bg-info">Revolucionaria</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="card text-center h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">XHTML 1.0</h5>
+                                            <p class="card-text">2000 - Reformulación como aplicación XML.</p>
+                                            <span class="badge bg-warning text-dark">Transición</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-center h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">HTML5</h5>
+                                            <p class="card-text">2014 - Etiquetas semánticas y APIs modernas.</p>
+                                            <span class="badge bg-success">Actual</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#versionsCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#versionsCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Evolución de HTML</h5>
+                    <p>Un recorrido por la historia y desarrollo del lenguaje fundamental de la web.</p>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="themeSwitch">
+                        <label class="form-check-label" for="themeSwitch">Modo oscuro</label>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© @dbgiler - 2025</p>
+                    <p class="text-muted small">Sitio desarrollado con Bootstrap 5</p>
+                    <p class="small">Tema actual: <span id="currentTheme">claro</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript para cambio de tema SIN CSS -->
+    <script>
+        // Sistema de cambio de tema usando solo clases de Bootstrap
+        const themeToggle = document.getElementById('themeToggle');
+        const themeSwitch = document.getElementById('themeSwitch');
+        const currentThemeSpan = document.getElementById('currentTheme');
+        const body = document.getElementById('body');
+        const navbar = document.getElementById('navbar');
+        const footer = document.getElementById('footer');
+        const heroSection = document.getElementById('heroSection');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+
+        // Elementos que necesitan cambiar en modo oscuro
+        const cards = document.querySelectorAll('.card');
+        const alerts = document.querySelectorAll('.alert');
+        const listItems = document.querySelectorAll('.list-group-item');
+
+        // Función para aplicar el tema oscuro
+        function applyDarkTheme() {
+            // Cambiar body
+            body.classList.remove('bg-light', 'text-dark');
+            body.classList.add('bg-dark', 'text-light');
+
+            // Cambiar navbar
+            navbar.classList.remove('navbar-light', 'bg-light');
+            navbar.classList.add('navbar-dark', 'bg-dark');
+
+            // Cambiar enlaces de navegación
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-dark');
+                link.classList.add('text-light');
+            });
+
+            // Cambiar footer
+            footer.classList.remove('bg-light');
+            footer.classList.add('bg-dark');
+
+            // Cambiar hero section
+            heroSection.classList.remove('bg-primary', 'bg-opacity-10');
+            heroSection.classList.add('bg-secondary', 'bg-opacity-25');
+
+            // Cambiar cards
+            cards.forEach(card => {
+                card.classList.remove('bg-white');
+                card.classList.add('bg-dark', 'text-light');
+            });
+
+            // Cambiar badges
+            const badges = document.querySelectorAll('.badge');
+            badges.forEach(badge => {
+                if (badge.classList.contains('bg-light')) {
+                    badge.classList.remove('bg-light', 'text-dark');
+                    badge.classList.add('bg-secondary', 'text-light');
+                }
+            });
+
+            // Cambiar alerts
+            alerts.forEach(alert => {
+                if (alert.classList.contains('alert-light')) {
+                    alert.classList.remove('alert-light');
+                    alert.classList.add('alert-dark');
+                }
+            });
+
+            // Cambiar list items
+            listItems.forEach(item => {
+                item.classList.remove('bg-white');
+                item.classList.add('bg-dark', 'text-light');
+            });
+
+            // Cambiar botón de tema
+            themeToggle.classList.remove('btn-outline-secondary');
+            themeToggle.classList.add('btn-outline-light');
+
+            // Cambiar íconos
+            sunIcon.classList.add('d-none');
+            moonIcon.classList.remove('d-none');
+
+            // Actualizar texto
+            if (currentThemeSpan) {
+                currentThemeSpan.textContent = 'oscuro';
+            }
+
+            // Guardar preferencia
+            localStorage.setItem('theme', 'dark');
+        }
+
+        // Función para aplicar el tema claro
+        function applyLightTheme() {
+            // Restaurar body
+            body.classList.remove('bg-dark', 'text-light');
+            body.classList.add('bg-light', 'text-dark');
+
+            // Restaurar navbar
+            navbar.classList.remove('navbar-dark', 'bg-dark');
+            navbar.classList.add('navbar-light', 'bg-light');
+
+            // Restaurar enlaces de navegación
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-light');
+                link.classList.add('text-dark');
+            });
+
+            // Restaurar footer
+            footer.classList.remove('bg-dark');
+            footer.classList.add('bg-light');
+
+            // Restaurar hero section
+            heroSection.classList.remove('bg-secondary', 'bg-opacity-25');
+            heroSection.classList.add('bg-primary', 'bg-opacity-10');
+
+            // Restaurar cards
+            cards.forEach(card => {
+                card.classList.remove('bg-dark', 'text-light');
+                card.classList.add('bg-white');
+            });
+
+            // Restaurar badges
+            const badges = document.querySelectorAll('.badge');
+            badges.forEach(badge => {
+                if (badge.classList.contains('bg-secondary') && badge.classList.contains('text-light')) {
+                    badge.classList.remove('bg-secondary', 'text-light');
+                    badge.classList.add('bg-light', 'text-dark');
+                }
+            });
+
+            // Restaurar alerts
+            alerts.forEach(alert => {
+                if (alert.classList.contains('alert-dark')) {
+                    alert.classList.remove('alert-dark');
+                    alert.classList.add('alert-light');
+                }
+            });
+
+            // Restaurar list items
+            listItems.forEach(item => {
+                item.classList.remove('bg-dark', 'text-light');
+                item.classList.add('bg-white');
+            });
+
+            // Restaurar botón de tema
+            themeToggle.classList.remove('btn-outline-light');
+            themeToggle.classList.add('btn-outline-secondary');
+
+            // Restaurar íconos
+            sunIcon.classList.remove('d-none');
+            moonIcon.classList.add('d-none');
+
+            // Actualizar texto
+            if (currentThemeSpan) {
+                currentThemeSpan.textContent = 'claro';
+            }
+
+            // Guardar preferencia
+            localStorage.setItem('theme', 'light');
+        }
+
+        // Función para alternar entre temas
+        function toggleTheme() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+
+            if (currentTheme === 'light') {
+                applyDarkTheme();
+            } else {
+                applyLightTheme();
+            }
+        }
+
+        // Cargar tema guardado
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+
+            if (savedTheme === 'dark') {
+                applyDarkTheme();
+                if (themeSwitch) themeSwitch.checked = true;
+            } else {
+                applyLightTheme();
+                if (themeSwitch) themeSwitch.checked = false;
+            }
+        }
+
+        // Event Listeners
+        if (themeToggle) {
+            themeToggle.addEventListener('click', toggleTheme);
+        }
+
+        if (themeSwitch) {
+            themeSwitch.addEventListener('change', toggleTheme);
+        }
+
+        // Cargar tema al iniciar
+        document.addEventListener('DOMContentLoaded', loadTheme);
+
+        // Tecla de acceso rápido (Alt+T)
+        document.addEventListener('keydown', function (e) {
+            if (e.altKey && e.key === 't') {
+                e.preventDefault();
+                toggleTheme();
+
+                // Mostrar notificación temporal
+                showThemeNotification();
+            }
+        });
+
+        // Función para mostrar notificación
+        function showThemeNotification() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            const themeName = currentTheme === 'dark' ? 'oscuro' : 'claro';
+
+            // Crear elemento de notificación
+            const notification = document.createElement('div');
+            notification.className = `position-fixed bottom-0 end-0 m-3 p-3 rounded shadow ${currentTheme === 'dark' ? 'bg-dark text-light' : 'bg-light text-dark'
+                }`;
+            notification.style.zIndex = '1050';
+            notification.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-palette-fill me-2 fs-4"></i>
+                    <div>
+                        <strong>Tema cambiado</strong>
+                        <p class="mb-0">Modo ${themeName} activado</p>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(notification);
+
+            // Eliminar después de 3 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Evolución de HTML</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-light text-dark" id="body">
+    <!-- Barra de navegación responsiva -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/HTML5_logo.png" alt="Logo HTML5" class="me-2" style="height: 40px;">
+                <span class="fw-bold">Evolución de HTML</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html"><i class="bi bi-clock-history me-1"></i>Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="versiones.html"><i class="bi bi-layers me-1"></i>Versiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparativa.html"><i class="bi bi-bar-chart me-1"></i>Comparativa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html"><i class="bi bi-envelope me-1"></i>Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- Botón de cambio de tema -->
+                <button class="btn btn-outline-secondary" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="bi bi-sun" id="sunIcon"></i>
+                    <i class="bi bi-moon d-none" id="moonIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header de página -->
+    <header class="bg-primary text-white py-5" id="pageHeader">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold text-white"><i class="bi bi-envelope me-3"></i>Contacto</h1>
+                    <p class="lead text-white">Contáctanos para obtener más información sobre la evolución del HTML o
+                        para compartir tus comentarios.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="bg-white text-dark p-3 rounded shadow">
+                        <p class="mb-1"><strong>¿Tienes preguntas?</strong></p>
+                        <p class="mb-0">Estamos aquí para ayudarte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Formulario de contacto -->
+                <section class="card border-0 shadow-sm mb-4" id="contactFormCard">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                <i class="bi bi-chat-left-text text-primary fs-4"></i>
+                            </div>
+                            <h2 class="card-title h3 mb-0">Formulario de Contacto</h2>
+                        </div>
+                        <p class="card-text mb-4">
+                            Completa el siguiente formulario para ponerte en contacto con nosotros. Te responderemos a
+                            la mayor brevedad posible.
+                        </p>
+
+                        <form action="#" method="post" id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Nombre completo <span
+                                            class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="name" name="name" required
+                                            placeholder="Ingresa tu nombre">
+                                    </div>
+                                    <div class="form-text">Ej: Juan Pérez</div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Correo electrónico <span
+                                            class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" name="email" required
+                                            placeholder="ejemplo@correo.com">
+                                    </div>
+                                    <div class="form-text">Te responderemos a este correo</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Asunto <span
+                                        class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-card-heading"></i></span>
+                                    <select class="form-select" id="subject" name="subject" required>
+                                        <option value="" selected disabled>Selecciona un asunto</option>
+                                        <option value="consulta">Consulta sobre HTML</option>
+                                        <option value="sugerencia">Sugerencia para el sitio</option>
+                                        <option value="error">Reportar error</option>
+                                        <option value="colaboracion">Propuesta de colaboración</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje <span
+                                        class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-chat-left-text"></i></span>
+                                    <textarea class="form-control" id="message" name="message" rows="6" required
+                                        placeholder="Escribe tu mensaje aquí..."></textarea>
+                                </div>
+                                <div class="form-text">Máximo 1000 caracteres</div>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                                <label class="form-check-label" for="newsletter">Deseo recibir actualizaciones sobre
+                                    HTML y desarrollo web</label>
+                            </div>
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="reset" class="btn btn-outline-secondary me-md-2">
+                                    <i class="bi bi-arrow-clockwise me-1"></i>Limpiar
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-send me-1"></i>Enviar mensaje
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Información adicional -->
+                <section class="card border-0 shadow-sm" id="infoCard">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-info bg-opacity-10 p-2 rounded me-3">
+                                <i class="bi bi-info-circle text-info fs-4"></i>
+                            </div>
+                            <h3 class="card-title h4 mb-0">Información importante</h3>
+                        </div>
+                        <div class="alert alert-info">
+                            <i class="bi bi-clock-history me-2"></i>
+                            <strong>Tiempo de respuesta:</strong> Intentaremos responder a todas las consultas en un
+                            plazo máximo de 48 horas hábiles.
+                        </div>
+                        <div class="alert alert-warning">
+                            <i class="bi bi-shield-check me-2"></i>
+                            <strong>Privacidad:</strong> Tus datos personales serán tratados con confidencialidad y no
+                            serán compartidos con terceros.
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar con información de contacto -->
+            <div class="col-lg-4">
+                <!-- Tarjeta de contacto directo -->
+                <div class="card shadow-sm mb-4" id="contactCard">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0"><i class="bi bi-telephone me-2"></i>Contacto directo</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-envelope text-primary me-3 fs-5"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p class="mb-0">contacto@evolucionhtml.com</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-globe text-primary me-3 fs-5"></i>
+                                <div>
+                                    <strong>Sitio web</strong>
+                                    <p class="mb-0">www.evolucionhtml.com</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-clock text-primary me-3 fs-5"></i>
+                                <div>
+                                    <strong>Horario de atención</strong>
+                                    <p class="mb-0">Lunes a Viernes: 9:00 - 18:00</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de redes sociales -->
+                <div class="card shadow-sm mb-4" id="socialCard">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0"><i class="bi bi-share me-2"></i>Síguenos en redes</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-around">
+                            <a href="#" class="btn btn-outline-primary btn-lg rounded-circle">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary btn-lg rounded-circle">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary btn-lg rounded-circle">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary btn-lg rounded-circle">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
+                        <p class="text-center mt-3 mb-0 small" id="socialText">
+                            Síguenos para estar al día con las últimas novedades sobre HTML
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Preguntas frecuentes -->
+                <div class="card shadow-sm" id="faqCard">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="mb-0"><i class="bi bi-question-circle me-2"></i>Preguntas frecuentes</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="accordion accordion-flush" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h6 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        ¿Quién creó este sitio?
+                                    </button>
+                                </h6>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Este sitio fue creado por un estudiante y su fiel compañero la IA para
+                                        compartir conocimiento sobre la evolución del HTML.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h6 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        ¿Es gratuita la información?
+                                    </button>
+                                </h6>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sí, todo el contenido de este sitio es completamente gratuito y de libre acceso.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h6 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        ¿Puedo colaborar con contenido?
+                                    </button>
+                                </h6>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ¡Por supuesto! Nos encantaría recibir tus contribuciones. Escríbenos a través
+                                        del formulario.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Evolución de HTML</h5>
+                    <p>Un recorrido por la historia y desarrollo del lenguaje fundamental de la web.</p>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="themeSwitch">
+                        <label class="form-check-label" for="themeSwitch">Modo oscuro</label>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© @dbgiler - 2025</p>
+                    <p class="text-muted small">Sitio desarrollado con Bootstrap 5</p>
+                    <p class="small">Tema actual: <span id="currentTheme">claro</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript para cambio de tema CORREGIDO -->
+    <script>
+        // Sistema de cambio de tema usando solo clases de Bootstrap
+        const themeToggle = document.getElementById('themeToggle');
+        const themeSwitch = document.getElementById('themeSwitch');
+        const currentThemeSpan = document.getElementById('currentTheme');
+        const body = document.getElementById('body');
+        const navbar = document.getElementById('navbar');
+        const footer = document.getElementById('footer');
+        const pageHeader = document.getElementById('pageHeader');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+        const socialText = document.getElementById('socialText');
+
+        // Función para aplicar el tema oscuro
+        function applyDarkTheme() {
+            // Cambiar body
+            body.classList.remove('bg-light', 'text-dark');
+            body.classList.add('bg-dark', 'text-light');
+
+            // Cambiar navbar
+            navbar.classList.remove('navbar-light', 'bg-light');
+            navbar.classList.add('navbar-dark', 'bg-dark');
+
+            // Cambiar enlaces de navegación
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-dark');
+                link.classList.add('text-light');
+            });
+
+            // Cambiar footer
+            footer.classList.remove('bg-light');
+            footer.classList.add('bg-dark');
+
+            // Cambiar header de página
+            pageHeader.classList.remove('bg-primary');
+            pageHeader.classList.add('bg-dark');
+
+            // Cambiar cards
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                // Solo cambiar cards que no tienen colores específicos
+                if (!card.classList.contains('bg-primary') &&
+                    !card.classList.contains('bg-success') &&
+                    !card.classList.contains('bg-info') &&
+                    !card.classList.contains('bg-warning') &&
+                    !card.classList.contains('bg-danger') &&
+                    !card.classList.contains('bg-secondary')) {
+                    card.classList.remove('bg-white', 'bg-light');
+                    card.classList.add('bg-dark', 'text-light');
+                }
+            });
+
+            // Cambiar textos que son text-muted
+            const mutedTexts = document.querySelectorAll('.text-muted');
+            mutedTexts.forEach(text => {
+                text.classList.remove('text-muted');
+                text.classList.add('text-light', 'opacity-75');
+            });
+
+            // Cambiar form-text específicamente
+            const formTexts = document.querySelectorAll('.form-text');
+            formTexts.forEach(text => {
+                text.classList.remove('text-muted');
+                text.classList.add('text-light', 'opacity-75');
+            });
+
+            // Cambiar texto de redes sociales específicamente
+            if (socialText) {
+                socialText.classList.remove('text-muted');
+                socialText.classList.add('text-light', 'opacity-75');
+            }
+
+            // Cambiar list items
+            const listItems = document.querySelectorAll('.list-group-item');
+            listItems.forEach(item => {
+                item.classList.remove('bg-white');
+                item.classList.add('bg-dark', 'text-light');
+            });
+
+            // Cambiar accordion items
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            accordionItems.forEach(item => {
+                item.classList.add('bg-dark', 'text-light');
+            });
+
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+            accordionButtons.forEach(button => {
+                button.classList.remove('text-dark');
+                button.classList.add('text-light');
+                button.style.backgroundColor = '#343a40';
+            });
+
+            const accordionBodies = document.querySelectorAll('.accordion-body');
+            accordionBodies.forEach(body => {
+                body.classList.remove('text-dark');
+                body.classList.add('text-light');
+            });
+
+            // Cambiar form labels y checks
+            const formLabels = document.querySelectorAll('.form-label, .form-check-label');
+            formLabels.forEach(label => {
+                label.classList.remove('text-dark');
+                label.classList.add('text-light');
+            });
+
+            // Cambiar form controls
+            const formControls = document.querySelectorAll('.form-control, .form-select');
+            formControls.forEach(control => {
+                control.classList.remove('bg-white', 'text-dark');
+                control.classList.add('bg-dark', 'text-light');
+                control.style.borderColor = '#6c757d';
+            });
+
+            // Cambiar input groups
+            const inputGroups = document.querySelectorAll('.input-group-text');
+            inputGroups.forEach(group => {
+                group.classList.remove('bg-light');
+                group.classList.add('bg-secondary', 'text-light');
+                group.style.borderColor = '#6c757d';
+            });
+
+            // Cambiar botón de tema
+            themeToggle.classList.remove('btn-outline-secondary');
+            themeToggle.classList.add('btn-outline-light');
+
+            // Cambiar íconos
+            sunIcon.classList.add('d-none');
+            moonIcon.classList.remove('d-none');
+
+            // Actualizar texto
+            if (currentThemeSpan) {
+                currentThemeSpan.textContent = 'oscuro';
+            }
+
+            // Guardar preferencia
+            localStorage.setItem('theme', 'dark');
+        }
+
+        // Función para aplicar el tema claro
+        function applyLightTheme() {
+            // Restaurar body
+            body.classList.remove('bg-dark', 'text-light');
+            body.classList.add('bg-light', 'text-dark');
+
+            // Restaurar navbar
+            navbar.classList.remove('navbar-dark', 'bg-dark');
+            navbar.classList.add('navbar-light', 'bg-light');
+
+            // Restaurar enlaces de navegación
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-light');
+                link.classList.add('text-dark');
+            });
+
+            // Restaurar footer
+            footer.classList.remove('bg-dark');
+            footer.classList.add('bg-light');
+
+            // Restaurar header de página
+            pageHeader.classList.remove('bg-dark');
+            pageHeader.classList.add('bg-primary');
+
+            // Restaurar cards
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (!card.classList.contains('bg-primary') &&
+                    !card.classList.contains('bg-success') &&
+                    !card.classList.contains('bg-info') &&
+                    !card.classList.contains('bg-warning') &&
+                    !card.classList.contains('bg-danger') &&
+                    !card.classList.contains('bg-secondary')) {
+                    card.classList.remove('bg-dark', 'text-light');
+                    card.classList.add('bg-white');
+                }
+            });
+
+            // Restaurar textos que son text-muted
+            const lightTexts = document.querySelectorAll('.text-light');
+            lightTexts.forEach(text => {
+                if (text.classList.contains('opacity-75')) {
+                    text.classList.remove('text-light', 'opacity-75');
+                    text.classList.add('text-muted');
+                }
+            });
+
+            // Restaurar texto de redes sociales específicamente
+            if (socialText) {
+                socialText.classList.remove('text-light', 'opacity-75');
+                socialText.classList.add('text-muted');
+            }
+
+            // Restaurar list items
+            const listItems = document.querySelectorAll('.list-group-item');
+            listItems.forEach(item => {
+                item.classList.remove('bg-dark', 'text-light');
+                item.classList.add('bg-white');
+            });
+
+            // Restaurar accordion items
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            accordionItems.forEach(item => {
+                item.classList.remove('bg-dark', 'text-light');
+            });
+
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+            accordionButtons.forEach(button => {
+                button.classList.remove('text-light');
+                button.classList.add('text-dark');
+                button.style.backgroundColor = '';
+            });
+
+            const accordionBodies = document.querySelectorAll('.accordion-body');
+            accordionBodies.forEach(body => {
+                body.classList.remove('text-light');
+                body.classList.add('text-dark');
+            });
+
+            // Restaurar form labels y checks
+            const formLabels = document.querySelectorAll('.form-label, .form-check-label');
+            formLabels.forEach(label => {
+                label.classList.remove('text-light');
+                label.classList.add('text-dark');
+            });
+
+            // Restaurar form controls
+            const formControls = document.querySelectorAll('.form-control, .form-select');
+            formControls.forEach(control => {
+                control.classList.remove('bg-dark', 'text-light');
+                control.classList.add('bg-white', 'text-dark');
+                control.style.borderColor = '';
+            });
+
+            // Restaurar input groups
+            const inputGroups = document.querySelectorAll('.input-group-text');
+            inputGroups.forEach(group => {
+                group.classList.remove('bg-secondary', 'text-light');
+                group.classList.add('bg-light');
+                group.style.borderColor = '';
+            });
+
+            // Restaurar botón de tema
+            themeToggle.classList.remove('btn-outline-light');
+            themeToggle.classList.add('btn-outline-secondary');
+
+            // Restaurar íconos
+            sunIcon.classList.remove('d-none');
+            moonIcon.classList.add('d-none');
+
+            // Actualizar texto
+            if (currentThemeSpan) {
+                currentThemeSpan.textContent = 'claro';
+            }
+
+            // Guardar preferencia
+            localStorage.setItem('theme', 'light');
+        }
+
+        // Función para alternar entre temas
+        function toggleTheme() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+
+            if (currentTheme === 'light') {
+                applyDarkTheme();
+            } else {
+                applyLightTheme();
+            }
+        }
+
+        // Cargar tema guardado
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+
+            if (savedTheme === 'dark') {
+                applyDarkTheme();
+                if (themeSwitch) themeSwitch.checked = true;
+            } else {
+                applyLightTheme();
+                if (themeSwitch) themeSwitch.checked = false;
+            }
+        }
+
+        // Event Listeners
+        if (themeToggle) {
+            themeToggle.addEventListener('click', toggleTheme);
+        }
+
+        if (themeSwitch) {
+            themeSwitch.addEventListener('change', toggleTheme);
+        }
+
+        // Cargar tema al iniciar
+        document.addEventListener('DOMContentLoaded', loadTheme);
+
+        // Tecla de acceso rápido (Alt+T)
+        document.addEventListener('keydown', function (e) {
+            if (e.altKey && e.key === 't') {
+                e.preventDefault();
+                toggleTheme();
+
+                // Mostrar notificación temporal
+                showThemeNotification();
+            }
+        });
+
+        // Función para mostrar notificación
+        function showThemeNotification() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            const themeName = currentTheme === 'dark' ? 'oscuro' : 'claro';
+
+            // Crear elemento de notificación
+            const notification = document.createElement('div');
+            notification.className = `position-fixed bottom-0 end-0 m-3 p-3 rounded shadow ${currentTheme === 'dark' ? 'bg-dark text-light' : 'bg-light text-dark'
+                }`;
+            notification.style.zIndex = '1050';
+            notification.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-palette-fill me-2 fs-4"></i>
+                    <div>
+                        <strong>Tema cambiado</strong>
+                        <p class="mb-0">Modo ${themeName} activado</p>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(notification);
+
+            // Eliminar después de 3 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // Validación básica del formulario
+        document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !subject || !message) {
+                alert('Por favor, completa todos los campos obligatorios.');
+                return;
+            }
+
+            if (message.length > 1000) {
+                alert('El mensaje no puede exceder los 1000 caracteres.');
+                return;
+            }
+
+            // Simulación de envío exitoso
+            alert('¡Gracias por tu mensaje! Te responderemos pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

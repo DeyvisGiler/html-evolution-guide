@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del HTML</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-light text-dark" id="body">
+    <!-- Barra de navegación responsiva -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/HTML5_logo.png" alt="Logo HTML5" class="me-2" style="height: 40px;">
+                <span class="fw-bold">Evolución de HTML</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="historia.html"><i
+                                class="bi bi-clock-history me-1"></i>Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="versiones.html"><i class="bi bi-layers me-1"></i>Versiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparativa.html"><i class="bi bi-bar-chart me-1"></i>Comparativa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"><i class="bi bi-envelope me-1"></i>Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- Botón de cambio de tema -->
+                <button class="btn btn-outline-secondary" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="bi bi-sun" id="sunIcon"></i>
+                    <i class="bi bi-moon d-none" id="moonIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header de página -->
+    <header class="bg-primary text-white py-5" id="pageHeader">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold"><i class="bi bi-clock-history me-3"></i>Historia del HTML</h1>
+                    <p class="lead">Descubre el origen y desarrollo del lenguaje que revolucionó la web mundial.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="bg-white text-dark p-3 rounded shadow">
+                        <p class="mb-1"><strong>Creación:</strong> 1991</p>
+                        <p class="mb-0"><strong>Creador:</strong> Tim Berners-Lee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <section>
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Artículo sobre Tim Berners-Lee -->
+                    <article class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-person-badge text-primary fs-4"></i>
+                                </div>
+                                <h2 class="card-title h3 mb-0">Tim Berners-Lee</h2>
+                            </div>
+                            <p class="card-text">
+                                HTML fue creado en el año de 1991 por <strong>Tim Berners-Lee</strong> en la
+                                Organización Europea para la Investigación Nuclear (CERN). Su objetivo era facilitar el
+                                intercambio de documentos científicos a través de una red global, lo que llevó al
+                                desarrollo del World Wide Web.
+                            </p>
+                            <p class="card-text">
+                                Su primera versión, el HTML 1.0, era muy básica y solo incluía alrededor de 20 etiquetas
+                                para estructurar texto, enlaces e imágenes.
+                            </p>
+
+                            <!-- Información adicional -->
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="card bg-light border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title h6"><i class="bi bi-geo-alt me-2"></i>Lugar</h5>
+                                            <p class="card-text mb-0">CERN, Ginebra, Suiza</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-light border-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title h6"><i class="bi bi-calendar-event me-2"></i>Año clave
+                                            </h5>
+                                            <p class="card-text mb-0">1991 - Primera propuesta de HTML</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Evolución del HTML -->
+                    <article class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-graph-up text-success fs-4"></i>
+                                </div>
+                                <h2 class="card-title h3 mb-0">Evolución del HTML a lo largo del tiempo</h2>
+                            </div>
+                            <p class="card-text mb-4">
+                                Desde su creación, HTML ha pasado por varias versiones que han ido mejorando sus
+                                capacidades y adaptándose a las necesidades de la web.
+                            </p>
+
+                            <!-- Lista de evolución con timeline -->
+                            <div class="timeline ps-3">
+                                <!-- HTML 1.0 -->
+                                <div class="timeline-item mb-4 position-relative">
+                                    <div class="timeline-badge bg-primary rounded-circle position-absolute"
+                                        style="width: 20px; height: 20px; left: -30px; top: 5px;"></div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <h3 class="card-title h5">HTML 1.0 <span
+                                                        class="badge bg-secondary">1991</span></h3>
+                                                <span class="badge bg-primary">Fundacional</span>
+                                            </div>
+                                            <p class="card-text">Primera versión con alrededor de 20 etiquetas básicas
+                                                para estructurar texto, enlaces e imágenes.</p>
+                                            <div class="mt-2">
+                                                <span class="badge bg-light text-dark me-1">20 etiquetas</span>
+                                                <span class="badge bg-light text-dark">Básico</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HTML 2.0 -->
+                                <div class="timeline-item mb-4 position-relative">
+                                    <div class="timeline-badge bg-primary rounded-circle position-absolute"
+                                        style="width: 20px; height: 20px; left: -30px; top: 5px;"></div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <h3 class="card-title h5">HTML 2.0 <span
+                                                        class="badge bg-secondary">1995</span></h3>
+                                                <span class="badge bg-info">Estándar RFC</span>
+                                            </div>
+                                            <p class="card-text">Introdujo formularios y tablas, permitiendo una mayor
+                                                interactividad y organización del contenido.</p>
+                                            <div class="mt-2">
+                                                <span class="badge bg-light text-dark me-1">Formularios</span>
+                                                <span class="badge bg-light text-dark">Tablas</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HTML 3.2 -->
+                                <div class="timeline-item mb-4 position-relative">
+                                    <div class="timeline-badge bg-primary rounded-circle position-absolute"
+                                        style="width: 20px; height: 20px; left: -30px; top: 5px;"></div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <h3 class="card-title h5">HTML 3.2 <span
+                                                        class="badge bg-secondary">1997</span></h3>
+                                                <span class="badge bg-warning text-dark">W3C</span>
+                                            </div>
+                                            <p class="card-text">Añadió soporte para scripts y applets, lo que permitió
+                                                crear páginas web más dinámicas y funcionales.</p>
+                                            <div class="mt-2">
+                                                <span class="badge bg-light text-dark me-1">Scripts</span>
+                                                <span class="badge bg-light text-dark">Applets</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HTML 4.01 -->
+                                <div class="timeline-item mb-4 position-relative">
+                                    <div class="timeline-badge bg-primary rounded-circle position-absolute"
+                                        style="width: 20px; height: 20px; left: -30px; top: 5px;"></div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <h3 class="card-title h5">HTML 4.01 <span
+                                                        class="badge bg-secondary">1999</span></h3>
+                                                <span class="badge bg-success">Revolución</span>
+                                            </div>
+                                            <p class="card-text">Mejoró la accesibilidad y separó el contenido de la
+                                                presentación, promoviendo el uso de CSS para el diseño visual.</p>
+                                            <div class="mt-2">
+                                                <span class="badge bg-light text-dark me-1">CSS</span>
+                                                <span class="badge bg-light text-dark">Accesibilidad</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- XHTML 1.0 -->
+                                <div class="timeline-item mb-4 position-relative">
+                                    <div class="timeline-badge bg-primary rounded-circle position-absolute"
+                                        style="width: 20px; height: 20px; left: -30px; top: 5px;"></div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <h3 class="card-title h5">XHTML 1.0 <span
+                                                        class="badge bg-secondary">2000</span></h3>
+                                                <span class="badge bg-info">XML</span>
+                                            </div>
+                                            <p class="card-text">Reformuló HTML como una aplicación XML, permitiendo
+                                                mayor estricticidad en la sintaxis y facilitando la interoperabilidad.
+                                            </p>
+                                            <div class="mt-2">
+                                                <span class="badge bg-light text-dark me-1">XML</span>
+                                                <span class="badge bg-light text-dark">Sintaxis estricta</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HTML5 -->
+                                <div class="timeline-item mb-4 position-relative">
+                                    <div class="timeline-badge bg-primary rounded-circle position-absolute"
+                                        style="width: 20px; height: 20px; left: -30px; top: 5px;"></div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <h3 class="card-title h5">HTML5 <span
+                                                        class="badge bg-secondary">2014</span></h3>
+                                                <span class="badge bg-danger">Actual</span>
+                                            </div>
+                                            <p class="card-text">Introdujo nuevas etiquetas semánticas, multimedia y
+                                                APIs para mejorar la interactividad y funcionalidad web, convirtiéndose
+                                                en el estándar actual.</p>
+                                            <div class="mt-2">
+                                                <span class="badge bg-light text-dark me-1">Semántica</span>
+                                                <span class="badge bg-light text-dark">Multimedia</span>
+                                                <span class="badge bg-light text-dark">APIs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Sidebar con información adicional -->
+                <div class="col-lg-4">
+                    <!-- Tarjeta de datos importantes -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="bi bi-info-circle me-2"></i>Datos importantes</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Año de creación
+                                    <span class="badge bg-primary rounded-pill">1991</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Versiones principales
+                                    <span class="badge bg-primary rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Organización
+                                    <span class="badge bg-primary rounded-pill">CERN</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Estándar actual
+                                    <span class="badge bg-success rounded-pill">HTML5</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta de impacto -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0"><i class="bi bi-globe me-2"></i>Impacto mundial</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>HTML ha sido fundamental para el desarrollo de la World Wide Web, permitiendo:</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Creación de
+                                    páginas web</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Documentación
+                                    científica en línea</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Comercio
+                                    electrónico</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Redes sociales
+                                </li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Aplicaciones web complejas
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cita de Tim Berners-Lee -->
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0"><i class="bi bi-chat-quote me-2"></i>Cita histórica</h5>
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p class="fst-italic">"La web no está terminada, es sólo la punta del iceberg. Las
+                                    nuevas tecnologías que están emergiendo nos permitirán hacer cosas que nunca
+                                    imaginamos."</p>
+                                <footer class="blockquote-footer mt-2">Tim Berners-Lee</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de línea de tiempo visual -->
+        <section class="mt-5">
+            <h2 class="text-center mb-4">Línea de tiempo visual</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="progress" style="height: 30px;">
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 10%"
+                            title="HTML 1.0 (1991)">1991</div>
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 15%"
+                            title="HTML 2.0 (1995)">1995</div>
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 10%" title="HTML 3.2 (1997)">
+                            1997</div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 15%"
+                            title="HTML 4.01 (1999)">1999</div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%"
+                            title="XHTML 1.0 (2000)">2000</div>
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" title="HTML5 (2014)">
+                            2014+</div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-2 small text-muted">
+                        <span>HTML 1.0</span>
+                        <span>HTML 2.0</span>
+                        <span>HTML 3.2</span>
+                        <span>HTML 4.01</span>
+                        <span>XHTML</span>
+                        <span>HTML5</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Evolución de HTML</h5>
+                    <p>Un recorrido por la historia y desarrollo del lenguaje fundamental de la web.</p>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="themeSwitch">
+                        <label class="form-check-label" for="themeSwitch">Modo oscuro</label>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© @dbgiler - 2025</p>
+                    <p class="text-muted small">Sitio desarrollado con Bootstrap 5</p>
+                    <p class="small">Tema actual: <span id="currentTheme">claro</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript para cambio de tema -->
+    <script>
+        // Sistema de cambio de tema usando solo clases de Bootstrap
+        const themeToggle = document.getElementById('themeToggle');
+        const themeSwitch = document.getElementById('themeSwitch');
+        const currentThemeSpan = document.getElementById('currentTheme');
+        const body = document.getElementById('body');
+        const navbar = document.getElementById('navbar');
+        const footer = document.getElementById('footer');
+        const pageHeader = document.getElementById('pageHeader');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+
+        // Elementos que necesitan cambiar en modo oscuro
+        const cards = document.querySelectorAll('.card');
+        const listItems = document.querySelectorAll('.list-group-item');
+        const badges = document.querySelectorAll('.badge');
+
+        // Función para aplicar el tema oscuro
+        function applyDarkTheme() {
+            // Cambiar body
+            body.classList.remove('bg-light', 'text-dark');
+            body.classList.add('bg-dark', 'text-light');
+
+            // Cambiar navbar
+            navbar.classList.remove('navbar-light', 'bg-light');
+            navbar.classList.add('navbar-dark', 'bg-dark');
+
+            // Cambiar enlaces de navegación
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-dark');
+                link.classList.add('text-light');
+            });
+
+            // Cambiar footer
+            footer.classList.remove('bg-light');
+            footer.classList.add('bg-dark');
+
+            // Cambiar header de página
+            pageHeader.classList.remove('bg-primary');
+            pageHeader.classList.add('bg-dark');
+
+            // Cambiar cards
+            cards.forEach(card => {
+                if (!card.classList.contains('bg-primary') &&
+                    !card.classList.contains('bg-success') &&
+                    !card.classList.contains('bg-info')) {
+                    card.classList.remove('bg-white', 'bg-light');
+                    card.classList.add('bg-dark', 'text-light');
+                }
+            });
+
+            // Cambiar badges
+            badges.forEach(badge => {
+                if (badge.classList.contains('bg-light')) {
+                    badge.classList.remove('bg-light', 'text-dark');
+                    badge.classList.add('bg-secondary', 'text-light');
+                }
+            });
+
+            // Cambiar list items
+            listItems.forEach(item => {
+                item.classList.remove('bg-white');
+                item.classList.add('bg-dark', 'text-light');
+            });
+
+            // Cambiar botón de tema
+            themeToggle.classList.remove('btn-outline-secondary');
+            themeToggle.classList.add('btn-outline-light');
+
+            // Cambiar íconos
+            sunIcon.classList.add('d-none');
+            moonIcon.classList.remove('d-none');
+
+            // Actualizar texto
+            if (currentThemeSpan) {
+                currentThemeSpan.textContent = 'oscuro';
+            }
+
+            // Guardar preferencia
+            localStorage.setItem('theme', 'dark');
+        }
+
+        // Función para aplicar el tema claro
+        function applyLightTheme() {
+            // Restaurar body
+            body.classList.remove('bg-dark', 'text-light');
+            body.classList.add('bg-light', 'text-dark');
+
+            // Restaurar navbar
+            navbar.classList.remove('navbar-dark', 'bg-dark');
+            navbar.classList.add('navbar-light', 'bg-light');
+
+            // Restaurar enlaces de navegación
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-light');
+                link.classList.add('text-dark');
+            });
+
+            // Restaurar footer
+            footer.classList.remove('bg-dark');
+            footer.classList.add('bg-light');
+
+            // Restaurar header de página
+            pageHeader.classList.remove('bg-dark');
+            pageHeader.classList.add('bg-primary');
+
+            // Restaurar cards
+            cards.forEach(card => {
+                if (!card.classList.contains('bg-primary') &&
+                    !card.classList.contains('bg-success') &&
+                    !card.classList.contains('bg-info')) {
+                    card.classList.remove('bg-dark', 'text-light');
+                    card.classList.add('bg-white');
+                }
+            });
+
+            // Restaurar badges
+            badges.forEach(badge => {
+                if (badge.classList.contains('bg-secondary') && badge.classList.contains('text-light')) {
+                    badge.classList.remove('bg-secondary', 'text-light');
+                    badge.classList.add('bg-light', 'text-dark');
+                }
+            });
+
+            // Restaurar list items
+            listItems.forEach(item => {
+                item.classList.remove('bg-dark', 'text-light');
+                item.classList.add('bg-white');
+            });
+
+            // Restaurar botón de tema
+            themeToggle.classList.remove('btn-outline-light');
+            themeToggle.classList.add('btn-outline-secondary');
+
+            // Restaurar íconos
+            sunIcon.classList.remove('d-none');
+            moonIcon.classList.add('d-none');
+
+            // Actualizar texto
+            if (currentThemeSpan) {
+                currentThemeSpan.textContent = 'claro';
+            }
+
+            // Guardar preferencia
+            localStorage.setItem('theme', 'light');
+        }
+
+        // Función para alternar entre temas
+        function toggleTheme() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+
+            if (currentTheme === 'light') {
+                applyDarkTheme();
+            } else {
+                applyLightTheme();
+            }
+        }
+
+        // Cargar tema guardado
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+
+            if (savedTheme === 'dark') {
+                applyDarkTheme();
+                if (themeSwitch) themeSwitch.checked = true;
+            } else {
+                applyLightTheme();
+                if (themeSwitch) themeSwitch.checked = false;
+            }
+        }
+
+        // Event Listeners
+        if (themeToggle) {
+            themeToggle.addEventListener('click', toggleTheme);
+        }
+
+        if (themeSwitch) {
+            themeSwitch.addEventListener('change', toggleTheme);
+        }
+
+        // Cargar tema al iniciar
+        document.addEventListener('DOMContentLoaded', loadTheme);
+
+        // Tecla de acceso rápido (Alt+T)
+        document.addEventListener('keydown', function (e) {
+            if (e.altKey && e.key === 't') {
+                e.preventDefault();
+                toggleTheme();
+
+                // Mostrar notificación temporal
+                showThemeNotification();
+            }
+        });
+
+        // Función para mostrar notificación
+        function showThemeNotification() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            const themeName = currentTheme === 'dark' ? 'oscuro' : 'claro';
+
+            // Crear elemento de notificación
+            const notification = document.createElement('div');
+            notification.className = `position-fixed bottom-0 end-0 m-3 p-3 rounded shadow ${currentTheme === 'dark' ? 'bg-dark text-light' : 'bg-light text-dark'
+                }`;
+            notification.style.zIndex = '1050';
+            notification.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-palette-fill me-2 fs-4"></i>
+                    <div>
+                        <strong>Tema cambiado</strong>
+                        <p class="mb-0">Modo ${themeName} activado</p>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(notification);
+
+            // Eliminar después de 3 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>

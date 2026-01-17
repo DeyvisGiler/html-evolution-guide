@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativa HTML</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-light text-dark" id="body">
+    <!-- Barra de navegación responsiva -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/HTML5_logo.png" alt="Logo HTML5" class="me-2" style="height: 40px;">
+                <span class="fw-bold">Evolución de HTML</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html"><i class="bi bi-clock-history me-1"></i>Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="versiones.html"><i class="bi bi-layers me-1"></i>Versiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="comparativa.html"><i
+                                class="bi bi-bar-chart me-1"></i>Comparativa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"><i class="bi bi-envelope me-1"></i>Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- Botón de cambio de tema -->
+                <button class="btn btn-outline-secondary" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="bi bi-sun" id="sunIcon"></i>
+                    <i class="bi bi-moon d-none" id="moonIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header de página - MODIFICADO PARA CAMBIAR TEXTO SEGÚN TEMA -->
+    <header class="bg-gradient py-5" style="background: linear-gradient(135deg, #010410 0%, #0a0212 100%);"
+        id="pageHeader">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" id="headerText">
+                    <h1 class="display-4 fw-bold" id="headerTitle"><i class="bi bi-bar-chart me-3"></i>Comparativa HTML
+                    </h1>
+                    <p class="lead" id="headerDescription">Análisis detallado de las diferencias entre las versiones del
+                        lenguaje
+                        HTML a lo largo de su evolución.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">¿Cuál versión usar?</h5>
+                            <p class="card-text">Hoy en día, <strong>HTML5</strong> es el estándar recomendado para
+                                todos los proyectos web modernos.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#recommendationModal">
+                                Ver recomendación
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <!-- Tabla comparativa -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Tabla comparativa de versiones</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover comparison-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="bg-primary text-white">Versión</th>
+                            <th scope="col" class="bg-primary text-white">Año</th>
+                            <th scope="col" class="bg-primary text-white">Características principales</th>
+                            <th scope="col" class="bg-primary text-white">Etiquetas destacadas</th>
+                            <th scope="col" class="bg-primary text-white">Nivel de adopción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>HTML 1.0</strong> <span class="badge bg-secondary">Fundacional</span></td>
+                            <td>1991</td>
+                            <td>Primera versión con alrededor de 20 etiquetas básicas para estructurar texto, enlaces e
+                                imágenes.</td>
+                            <td>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;p&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;a&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge">&lt;h1&gt;-&lt;h6&gt;</span>
+                            </td>
+                            <td>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 5%"></div>
+                                </div>
+                                <small class="text-muted stats-text">Obsoleta</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>HTML 2.0</strong> <span class="badge bg-primary">Estándar</span></td>
+                            <td>1995</td>
+                            <td>Introducción de formularios y tablas, permitiendo mayor interactividad y organización
+                                del contenido.</td>
+                            <td>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;form&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;table&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge">&lt;input&gt;</span>
+                            </td>
+                            <td>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 10%"></div>
+                                </div>
+                                <small class="text-muted stats-text">Obsoleta</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>HTML 3.2</strong> <span class="badge bg-info">W3C</span></td>
+                            <td>1997</td>
+                            <td>Soporte para scripts y applets, permitiendo páginas web más dinámicas y funcionales.
+                            </td>
+                            <td>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;script&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;style&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge">&lt;applet&gt;</span>
+                            </td>
+                            <td>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 15%"></div>
+                                </div>
+                                <small class="text-muted stats-text">Obsoleta</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>HTML 4.01</strong> <span class="badge bg-success">Revolución</span></td>
+                            <td>1999</td>
+                            <td>Mejora de accesibilidad y separación de contenido y presentación, promoviendo el uso de
+                                CSS.</td>
+                            <td>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;div&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;span&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge">&lt;link&gt;</span>
+                            </td>
+                            <td>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 70%"></div>
+                                </div>
+                                <small class="text-muted stats-text">En declive</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>XHTML 1.0</strong> <span class="badge bg-warning text-dark">XML</span></td>
+                            <td>2000</td>
+                            <td>Reformulación como aplicación XML, permitiendo mayor estricticidad en la sintaxis.</td>
+                            <td>
+                                <span class="badge bg-light text-dark feature-badge me-1">XML sintaxis</span>
+                                <span class="badge bg-light text-dark feature-badge">Auto-cierre</span>
+                            </td>
+                            <td>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"></div>
+                                </div>
+                                <small class="text-muted stats-text">En declive</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>HTML5</strong> <span class="badge bg-danger">Actual</span></td>
+                            <td>2014</td>
+                            <td>Nuevas etiquetas semánticas, multimedia y APIs para mejorar la interactividad y
+                                funcionalidad web.</td>
+                            <td>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;header&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;section&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge me-1">&lt;video&gt;</span>
+                                <span class="badge bg-light text-dark feature-badge">&lt;canvas&gt;</span>
+                            </td>
+                            <td>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 95%"></div>
+                                </div>
+                                <small class="text-muted stats-text">Estándar actual</small>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Análisis de evolución -->
+        <section class="mb-5">
+            <h2 class="mb-4">Análisis detallado de la evolución</h2>
+
+            <div class="accordion" id="evolutionAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne">
+                            <i class="bi bi-graph-up me-2"></i>Progreso tecnológico y funcional
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#evolutionAccordion">
+                        <div class="accordion-body">
+                            <p>Cada versión de HTML ha introducido mejoras significativas que han permitido un
+                                desarrollo web más rico y dinámico:</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i
+                                                    class="bi bi-arrow-right-circle text-primary me-2"></i>HTML 1.0 a
+                                                2.0</h5>
+                                            <p class="card-text">Transición de documentos estáticos a interactivos con
+                                                formularios, creando las bases para el comercio electrónico.</p>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi bi-check-circle text-success me-2"></i>Formularios para
+                                                    interacción</li>
+                                                <li><i class="bi bi-check-circle text-success me-2"></i>Tablas para
+                                                    organización</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i
+                                                    class="bi bi-arrow-right-circle text-primary me-2"></i>HTML 3.2</h5>
+                                            <p class="card-text">Introducción de capacidades dinámicas con scripts,
+                                                permitiendo validaciones y comportamientos complejos.</p>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi bi-check-circle text-success me-2"></i>Scripts para
+                                                    dinamismo</li>
+                                                <li><i class="bi bi-check-circle text-success me-2"></i>Applets para
+                                                    funcionalidad</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i
+                                                    class="bi bi-arrow-right-circle text-primary me-2"></i>HTML 4.01
+                                            </h5>
+                                            <p class="card-text">Separación clara entre contenido (HTML) y presentación
+                                                (CSS), mejorando mantenibilidad.</p>
+                                            <span class="badge bg-success">CSS Integration</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i
+                                                    class="bi bi-arrow-right-circle text-primary me-2"></i>XHTML 1.0
+                                            </h5>
+                                            <p class="card-text">Mayor rigurosidad sintáctica y compatibilidad con XML
+                                                para interoperabilidad entre sistemas.</p>
+                                            <span class="badge bg-warning text-dark">XML Compliance</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i
+                                                    class="bi bi-arrow-right-circle text-primary me-2"></i>HTML5</h5>
+                                            <p class="card-text">Web semántica, multimedia nativo y aplicaciones web
+                                                complejas con APIs modernas.</p>
+                                            <span class="badge bg-danger">Modern Web</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo">
+                            <i class="bi bi-arrow-left-right me-2"></i>Transición HTML a XHTML: Cambio de paradigma
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#evolutionAccordion">
+                        <div class="accordion-body">
+                            <p>La transición de HTML a XHTML marcó un cambio importante hacia una mayor estricticidad en
+                                la sintaxis:</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card border-danger mb-3">
+                                        <div class="card-header bg-danger text-white">HTML (Flexible)</div>
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle mb-2 text-muted">Ejemplos de sintaxis permisiva
+                                            </h6>
+                                            <code class="d-block mb-2">&lt;p&gt;Texto sin cerrar</code>
+                                            <code class="d-block mb-2">&lt;br&gt;</code>
+                                            <code class="d-block">&lt;input type="text"&gt;</code>
+                                            <div class="mt-3">
+                                                <span class="badge bg-danger">Pros:</span>
+                                                <small class="text-muted d-block">Fácil de aprender y escribir</small>
+                                                <small class="text-muted d-block">Tolerante a errores</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-success mb-3">
+                                        <div class="card-header bg-success text-white">XHTML (Estricto)</div>
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle mb-2 text-muted">Ejemplos de sintaxis estricta</h6>
+                                            <code class="d-block mb-2">&lt;p&gt;Texto cerrado&lt;/p&gt;</code>
+                                            <code class="d-block mb-2">&lt;br /&gt;</code>
+                                            <code class="d-block">&lt;input type="text" /&gt;</code>
+                                            <div class="mt-3">
+                                                <span class="badge bg-success">Pros:</span>
+                                                <small class="text-muted d-block">Consistencia en el código</small>
+                                                <small class="text-muted d-block">Compatibilidad con XML</small>
+                                                <small class="text-muted d-block">Mejor procesamiento por
+                                                    máquinas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-info mt-3">
+                                <i class="bi bi-info-circle me-2"></i>
+                                <strong>Impacto:</strong> XHTML estableció buenas prácticas que influyeron en el
+                                desarrollo posterior de HTML5, aunque HTML5 volvió a una sintaxis más flexible pero
+                                manteniendo muchas de las mejores prácticas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree">
+                            <i class="bi bi-star-fill me-2"></i>HTML5: La revolución moderna
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#evolutionAccordion">
+                        <div class="accordion-body">
+                            <p>HTML5 representa un avance crucial al incorporar características modernas que responden a
+                                las necesidades actuales de la web:</p>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                            <i class="bi bi-tags text-primary fs-1 mb-3"></i>
+                                            <h5>Semántica Mejorada</h5>
+                                            <p class="small">Etiquetas como &lt;header&gt;, &lt;nav&gt;,
+                                                &lt;article&gt;, &lt;section&gt;, &lt;footer&gt; mejoran la estructura,
+                                                accesibilidad y SEO.</p>
+                                            <div class="mt-2">
+                                                <span class="badge bg-primary me-1">SEO</span>
+                                                <span class="badge bg-primary">Accesibilidad</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                            <i class="bi bi-play-btn text-primary fs-1 mb-3"></i>
+                                            <h5>Multimedia Nativo</h5>
+                                            <p class="small">&lt;video&gt; y &lt;audio&gt; nativos sin necesidad de
+                                                plugins externos como Flash. &lt;canvas&gt; para gráficos dinámicos.</p>
+                                            <div class="mt-2">
+                                                <span class="badge bg-primary me-1">Video</span>
+                                                <span class="badge bg-primary">Audio</span>
+                                                <span class="badge bg-primary">Canvas</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                            <i class="bi bi-gear text-primary fs-1 mb-3"></i>
+                                            <h5>APIs Poderosas</h5>
+                                            <p class="small">LocalStorage, Geolocation, Drag & Drop, Web Workers, Web
+                                                Sockets para aplicaciones web complejas.</p>
+                                            <div class="mt-2">
+                                                <span class="badge bg-primary me-1">APIs</span>
+                                                <span class="badge bg-primary">Offline</span>
+                                                <span class="badge bg-primary">Real-time</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-success mt-3">
+                                <i class="bi bi-lightning-charge me-2"></i>
+                                <strong>Ventaja clave:</strong> HTML5 permite crear aplicaciones web complejas que
+                                compiten con aplicaciones nativas, todo dentro del navegador sin plugins adicionales.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gráfico comparativo -->
+        <section class="mb-5">
+            <h2 class="mb-4">Comparativa visual de características</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="bi bi-list-check me-2"></i>Características por versión</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Etiquetas básicas</span>
+                                    <span>20 → 100+</span>
+                                </div>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar bg-secondary" style="width: 20%">1.0</div>
+                                    <div class="progress-bar bg-primary" style="width: 30%">2.0-3.2</div>
+                                    <div class="progress-bar bg-success" style="width: 30%">4.01</div>
+                                    <div class="progress-bar bg-danger" style="width: 20%">5</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Interactividad</span>
+                                    <span>Baja → Alta</span>
+                                </div>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar bg-secondary" style="width: 10%"></div>
+                                    <div class="progress-bar bg-primary" style="width: 30%"></div>
+                                    <div class="progress-bar bg-info" style="width: 20%"></div>
+                                    <div class="progress-bar bg-success" style="width: 20%"></div>
+                                    <div class="progress-bar bg-danger" style="width: 20%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Multimedia</span>
+                                    <span>Nula → Nativa</span>
+                                </div>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar bg-secondary" style="width: 0%"></div>
+                                    <div class="progress-bar bg-primary" style="width: 10%"></div>
+                                    <div class="progress-bar bg-info" style="width: 20%"></div>
+                                    <div class="progress-bar bg-success" style="width: 30%"></div>
+                                    <div class="progress-bar bg-danger" style="width: 40%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Semántica</span>
+                                    <span>Básica → Avanzada</span>
+                                </div>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar bg-secondary" style="width: 5%"></div>
+                                    <div class="progress-bar bg-primary" style="width: 15%"></div>
+                                    <div class="progress-bar bg-info" style="width: 20%"></div>
+                                    <div class="progress-bar bg-success" style="width: 30%"></div>
+                                    <div class="progress-bar bg-danger" style="width: 30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0"><i class="bi bi-pie-chart me-2"></i>Adopción en la web actual</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <div class="display-4 text-danger">95%</div>
+                                        <p class="text-muted stats-text">HTML5</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <div class="display-4 text-success">70%</div>
+                                        <p class="text-muted stats-text">HTML4.01</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-4">
+                                    <div class="text-center">
+                                        <div class="h4 text-info">40%</div>
+                                        <p class="text-muted stats-text">XHTML</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="text-center">
+                                        <div class="h4 text-warning">15%</div>
+                                        <p class="text-muted stats-text">HTML 3.2</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="text-center">
+                                        <div class="h4 text-secondary">5%</div>
+                                        <p class="text-muted stats-text">HTML 1.0/2.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-info mt-3">
+                                <i class="bi bi-info-circle me-2"></i>
+                                <strong>Nota:</strong> Los porcentajes no suman 100% porque muchos sitios usan múltiples
+                                versiones o están en transición.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recomendaciones -->
+        <section class="mb-5">
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="bi bi-check-circle me-2"></i>Recomendaciones prácticas</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-lightning text-warning fs-1 mb-3"></i>
+                                    <h5>Proyectos nuevos</h5>
+                                    <p class="card-text">Usa <strong>HTML5</strong> para todos los proyectos nuevos. Es
+                                        el estándar actual y ofrece las mejores características.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-tools text-info fs-1 mb-3"></i>
+                                    <h5>Proyectos existentes</h5>
+                                    <p class="card-text">Considera migrar gradualmente a HTML5 para aprovechar nuevas
+                                        características y mejorar mantenibilidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-book text-success fs-1 mb-3"></i>
+                                    <h5>Aprendizaje</h5>
+                                    <p class="card-text">Aprende HTML5 directamente. Las versiones anteriores son
+                                        importantes para entender la evolución, pero HTML5 es lo que se usa hoy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de recomendación -->
+    <div class="modal fade" id="recommendationModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-check-circle me-2"></i>Recomendación actual</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Para cualquier proyecto web moderno, se recomienda utilizar <strong>HTML5</strong> por las
+                        siguientes razones:</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            Soporte nativo para multimedia (audio, video, canvas)
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            Mejor semántica para SEO y accesibilidad
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            APIs poderosas para aplicaciones web complejas
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            Compatibilidad con dispositivos móviles
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            Estándar ampliamente adoptado y soportado
+                        </li>
+                    </ul>
+                    <div class="alert alert-info">
+                        <i class="bi bi-info-circle me-2"></i>
+                        HTML4 y XHTML aún se encuentran en algunos sitios legacy, pero no se recomiendan para nuevos
+                        proyectos.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="versiones.html#html5" class="btn btn-primary">Ver más sobre HTML5</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Evolución de HTML</h5>
+                    <p>Un recorrido por la historia y desarrollo del lenguaje fundamental de la web.</p>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="themeSwitch">
+                        <label class="form-check-label" for="themeSwitch">Modo oscuro</label>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© @dbgiler - 2025</p>
+                    <p class="text-muted small">Sitio desarrollado con Bootstrap 5</p>
+                    <p class="small">Tema actual: <span id="currentTheme">claro</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript para cambio de tema CORREGIDO -->
+    <script>
+        // Sistema de cambio de tema usando solo clases de Bootstrap
+        const themeToggle = document.getElementById('themeToggle');
+        const themeSwitch = document.getElementById('themeSwitch');
+        const currentThemeSpan = document.getElementById('currentTheme');
+        const body = document.getElementById('body');
+        const navbar = document.getElementById('navbar');
+        const footer = document.getElementById('footer');
+        const pageHeader = document.getElementById('pageHeader');
+        const headerTitle = document.getElementById('headerTitle');
+        const headerDescription = document.getElementById('headerDescription');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+
+        // Función para aplicar el tema oscuro
+        function applyDarkTheme() {
+            // Cambiar body
+            body.classList.remove('bg-light', 'text-dark');
+            body.classList.add('bg-dark', 'text-light');
+
+            // Cambiar navbar
+            navbar.classList.remove('navbar-light', 'bg-light');
+            navbar.classList.add('navbar-dark', 'bg-dark');
+
+            // Cambiar enlaces de navegación
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-dark');
+                link.classList.add('text-light');
+            });
+
+            // Cambiar footer
+            footer.classList.remove('bg-light');
+            footer.classList.add('bg-dark');
+
+            // Cambiar header de página - FONDO OSCURO
+            pageHeader.style.background = 'linear-gradient(135deg, #010410 0%, #0a0212 100%)';
+
+            // Cambiar texto del header - BLANCO en tema oscuro
+            if (headerTitle) {
+                headerTitle.classList.remove('text-dark');
+                headerTitle.classList.add('text-white');
+            }
+
+            if (headerDescription) {
+                headerDescription.classList.remove('text-dark');
+                headerDescription.classList.add('text-white');
+            }
+
+            // Cambiar textos que son text-muted
+            const mutedTexts = document.querySelectorAll('.text-muted');
+            mutedTexts.forEach(text => {
+                // Solo cambiar si no es stats-text
+                if (!text.classList.contains('stats-text')) {
+                    text.classList.remove('text-muted');
+                    text.classList.add('text-light');
+                }
+            });
+
+            // Cambiar stats-text específicamente
+            const statsTexts = document.querySelectorAll('.stats-text');
+            statsTexts.forEach(text => {
+                text.classList.remove('text-muted');
+                text.classList.add('text-light', 'opacity-75');
+            });
+
+            // Cambiar badges
+            const badges = document.querySelectorAll('.badge');
+            badges.forEach(badge => {
+                if (badge.classList.contains('bg-light') && badge.classList.contains('text-dark')) {
+                    badge.classList.remove('bg-light', 'text-dark');
+                    badge.classList.add('bg-secondary', 'text-light');
+                }
+            });
+
+            // Cambiar feature-badge específicamente
+            const featureBadges = document.querySelectorAll('.feature-badge');
+            featureBadges.forEach(badge => {
+                badge.classList.remove('bg-light', 'text-dark');
+                badge.classList.add('bg-secondary', 'text-light');
+            });
+
+            // Cambiar cards
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                // Solo cambiar cards que no tienen colores específicos
+                if (!card.classList.contains('bg-primary') &&
+                    !card.classList.contains('bg-success') &&
+                    !card.classList.contains('bg-info') &&
+                    !card.classList.contains('bg-warning') &&
+                    !card.classList.contains('bg-danger') &&
+                    !card.classList.contains('bg-secondary')) {
+                    card.classList.remove('bg-white', 'bg-light');
+                    card.classList.add('bg-dark', 'text-light');
+                }
+            });
+
+            // Cambiar tablas
+            const tables = document.querySelectorAll('.table');
+            tables.forEach(table => {
+                table.classList.remove('table-striped');
+                table.classList.add('table-dark');
+            });
+
+            // Cambiar botón de tema
+            themeToggle.classList.remove('btn-outline-secondary');
+            themeToggle.classList.add('btn-outline-light');
+
+            // Cambiar íconos
+            sunIcon.classList.add('d-none');
+            moonIcon.classList.remove('d-none');
+
+            // Actualizar texto
+            if (currentThemeSpan) {
+                currentThemeSpan.textContent = 'oscuro';
+            }
+
+            // Guardar preferencia
+            localStorage.setItem('theme', 'dark');
+        }
+
+        // Función para aplicar el tema claro
+        function applyLightTheme() {
+            // Restaurar body
+            body.classList.remove('bg-dark', 'text-light');
+            body.classList.add('bg-light', 'text-dark');
+
+            // Restaurar navbar
+            navbar.classList.remove('navbar-dark', 'bg-dark');
+            navbar.classList.add('navbar-light', 'bg-light');
+
+            // Restaurar enlaces de navegación
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-light');
+                link.classList.add('text-dark');
+            });
+
+            // Restaurar footer
+            footer.classList.remove('bg-dark');
+            footer.classList.add('bg-light');
+
+            // Restaurar header de página - FONDO CLARO
+            pageHeader.style.background = 'linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%)';
+
+            // Cambiar texto del header - NEGRO en tema claro
+            if (headerTitle) {
+                headerTitle.classList.remove('text-white');
+                headerTitle.classList.add('text-dark');
+            }
+
+            if (headerDescription) {
+                headerDescription.classList.remove('text-white');
+                headerDescription.classList.add('text-dark');
+            }
+
+            // Restaurar textos que son text-muted
+            const lightTexts = document.querySelectorAll('.text-light');
+            lightTexts.forEach(text => {
+                // Solo restaurar si no es stats-text y no es texto del header
+                if (!text.classList.contains('stats-text') &&
+                    text !== headerTitle && text !== headerDescription) {
+                    text.classList.remove('text-light');
+                    text.classList.add('text-muted');
+                }
+            });
+
+            // Restaurar stats-text específicamente
+            const statsTexts = document.querySelectorAll('.stats-text');
+            statsTexts.forEach(text => {
+                text.classList.remove('text-light', 'opacity-75');
+                text.classList.add('text-muted');
+            });
+
+            // Restaurar badges
+            const badges = document.querySelectorAll('.badge');
+            badges.forEach(badge => {
+                if (badge.classList.contains('bg-secondary') && badge.classList.contains('text-light')) {
+                    badge.classList.remove('bg-secondary', 'text-light');
+                    badge.classList.add('bg-light', 'text-dark');
+                }
+            });
+
+            // Restaurar feature-badge específicamente
+            const featureBadges = document.querySelectorAll('.feature-badge');
+            featureBadges.forEach(badge => {
+                badge.classList.remove('bg-secondary', 'text-light');
+                badge.classList.add('bg-light', 'text-dark');
+            });
+
+            // Restaurar cards
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (!card.classList.contains('bg-primary') &&
+                    !card.classList.contains('bg-success') &&
+                    !card.classList.contains('bg-info') &&
+                    !card.classList.contains('bg-warning') &&
+                    !card.classList.contains('bg-danger') &&
+                    !card.classList.contains('bg-secondary')) {
+                    card.classList.remove('bg-dark', 'text-light');
+                    card.classList.add('bg-white');
+                }
+            });
+
+            // Restaurar tablas
+            const tables = document.querySelectorAll('.table');
+            tables.forEach(table => {
+                table.classList.remove('table-dark');
+                table.classList.add('table-striped');
+            });
+
+            // Restaurar botón de tema
+            themeToggle.classList.remove('btn-outline-light');
+            themeToggle.classList.add('btn-outline-secondary');
+
+            // Restaurar íconos
+            sunIcon.classList.remove('d-none');
+            moonIcon.classList.add('d-none');
+
+            // Actualizar texto
+            if (currentThemeSpan) {
+                currentThemeSpan.textContent = 'claro';
+            }
+
+            // Guardar preferencia
+            localStorage.setItem('theme', 'light');
+        }
+
+        // Función para alternar entre temas
+        function toggleTheme() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+
+            if (currentTheme === 'light') {
+                applyDarkTheme();
+            } else {
+                applyLightTheme();
+            }
+        }
+
+        // Cargar tema guardado
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+
+            if (savedTheme === 'dark') {
+                applyDarkTheme();
+                if (themeSwitch) themeSwitch.checked = true;
+            } else {
+                applyLightTheme();
+                if (themeSwitch) themeSwitch.checked = false;
+            }
+        }
+
+        // Event Listeners
+        if (themeToggle) {
+            themeToggle.addEventListener('click', toggleTheme);
+        }
+
+        if (themeSwitch) {
+            themeSwitch.addEventListener('change', toggleTheme);
+        }
+
+        // Cargar tema al iniciar
+        document.addEventListener('DOMContentLoaded', loadTheme);
+
+        // Tecla de acceso rápido (Alt+T)
+        document.addEventListener('keydown', function (e) {
+            if (e.altKey && e.key === 't') {
+                e.preventDefault();
+                toggleTheme();
+
+                // Mostrar notificación temporal
+                showThemeNotification();
+            }
+        });
+
+        // Función para mostrar notificación
+        function showThemeNotification() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            const themeName = currentTheme === 'dark' ? 'oscuro' : 'claro';
+
+            // Crear elemento de notificación
+            const notification = document.createElement('div');
+            notification.className = `position-fixed bottom-0 end-0 m-3 p-3 rounded shadow ${currentTheme === 'dark' ? 'bg-dark text-light' : 'bg-light text-dark'
+                }`;
+            notification.style.zIndex = '1050';
+            notification.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-palette-fill me-2 fs-4"></i>
+                    <div>
+                        <strong>Tema cambiado</strong>
+                        <p class="mb-0">Modo ${themeName} activado</p>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(notification);
+
+            // Eliminar después de 3 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>

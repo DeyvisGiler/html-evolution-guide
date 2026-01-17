@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versiones del HTML</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-light text-dark" id="body">
+    <!-- Barra de navegación responsiva -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/HTML5_logo.png" alt="Logo HTML5" class="me-2" style="height: 40px;">
+                <span class="fw-bold">Evolución de HTML</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html"><i class="bi bi-clock-history me-1"></i>Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="versiones.html"><i class="bi bi-layers me-1"></i>Versiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparativa.html"><i class="bi bi-bar-chart me-1"></i>Comparativa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"><i class="bi bi-envelope me-1"></i>Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- Botón de cambio de tema -->
+                <button class="btn btn-outline-secondary" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="bi bi-sun" id="sunIcon"></i>
+                    <i class="bi bi-moon d-none" id="moonIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header de página -->
+    <header class="bg-primary text-white py-5" id="pageHeader">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold"><i class="bi bi-layers me-3"></i>Versiones del HTML</h1>
+                    <p class="lead">Descubre todas las versiones del lenguaje HTML desde su creación hasta la
+                        actualidad.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="bg-white text-dark p-3 rounded shadow">
+                        <p class="mb-1"><strong>Versión actual:</strong> HTML5</p>
+                        <p class="mb-0"><strong>Total versiones:</strong> 6 principales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <section>
+            <h2 class="text-center mb-5">Todas las versiones del HTML</h2>
+
+            <!-- Grid de versiones -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- HTML 1.0 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm version-card">
+                        <div class="card-header bg-secondary text-white">
+                            <h3 class="card-title h5 mb-0">HTML 1.0 <span
+                                    class="badge bg-light text-dark float-end">1991</span></h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-secondary bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-1-circle text-secondary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 mb-0">Primera Versión</h4>
+                                    <small class="text-muted subtitle-text">Fundacional</small>
+                                </div>
+                            </div>
+                            <p class="card-text">La primera versión de HTML, creada por Tim Berners-Lee, era muy básica
+                                y solo incluía alrededor de 20 etiquetas para estructurar texto, enlaces e imágenes.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">20 etiquetas</span>
+                                <span class="badge bg-light text-dark mb-1">Texto básico</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted footer-text"><i class="bi bi-person me-1"></i>Tim
+                                Berners-Lee</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HTML 2.0 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm version-card">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="card-title h5 mb-0">HTML 2.0 <span
+                                    class="badge bg-light text-dark float-end">1995</span></h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-2-circle text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 mb-0">Primer Estándar</h4>
+                                    <small class="text-muted subtitle-text">Interactividad</small>
+                                </div>
+                            </div>
+                            <p class="card-text">Esta versión introdujo formularios y tablas, permitiendo una mayor
+                                interactividad y organización del contenido en las páginas web.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">Formularios</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Tablas</span>
+                                <span class="badge bg-light text-dark mb-1">Interactividad</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted footer-text"><i class="bi bi-file-earmark-text me-1"></i>RFC
+                                1866</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HTML 3.2 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm version-card">
+                        <div class="card-header bg-info text-white">
+                            <h3 class="card-title h5 mb-0">HTML 3.2 <span
+                                    class="badge bg-light text-dark float-end">1997</span></h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-info bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-3-circle text-info fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 mb-0">Dinamismo Web</h4>
+                                    <small class="text-muted subtitle-text">W3C Recomendación</small>
+                                </div>
+                            </div>
+                            <p class="card-text">HTML 3.2 añadió soporte para scripts y applets, lo que permitió a los
+                                desarrolladores crear páginas web más dinámicas y funcionales.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">Scripts</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Applets</span>
+                                <span class="badge bg-light text-dark mb-1">Dinámico</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted footer-text"><i class="bi bi-code-slash me-1"></i>Primer
+                                W3C</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HTML 4.01 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm version-card">
+                        <div class="card-header bg-success text-white">
+                            <h3 class="card-title h5 mb-0">HTML 4.01 <span
+                                    class="badge bg-light text-dark float-end">1999</span></h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-4-circle text-success fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 mb-0">Revolución Web</h4>
+                                    <small class="text-muted subtitle-text">Separación CSS</small>
+                                </div>
+                            </div>
+                            <p class="card-text">Esta versión mejoró la accesibilidad y separó el contenido de la
+                                presentación, promoviendo el uso de hojas de estilo CSS para el diseño visual.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">CSS</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Accesibilidad</span>
+                                <span class="badge bg-light text-dark mb-1">Separación</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted footer-text"><i class="bi bi-layout-split me-1"></i>CSS
+                                Integration</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- XHTML 1.0 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm version-card">
+                        <div class="card-header bg-warning text-dark">
+                            <h3 class="card-title h5 mb-0">XHTML 1.0 <span
+                                    class="badge bg-light text-dark float-end">2000</span></h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-warning bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-filetype-xml text-warning fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 mb-0">Era XML</h4>
+                                    <small class="text-muted subtitle-text">Sintaxis Estricta</small>
+                                </div>
+                            </div>
+                            <p class="card-text">XHTML reformuló HTML como una aplicación XML, lo que permitió una mayor
+                                estricticidad en la sintaxis y facilitó la interoperabilidad con otros sistemas basados
+                                en XML.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">XML</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Sintaxis estricta</span>
+                                <span class="badge bg-light text-dark mb-1">Interoperabilidad</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted footer-text"><i
+                                    class="bi bi-file-earmark-binary me-1"></i>Aplicación XML</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HTML5 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm version-card">
+                        <div class="card-header bg-danger text-white">
+                            <h3 class="card-title h5 mb-0">HTML5 <span
+                                    class="badge bg-light text-dark float-end">2014</span></h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-danger bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-5-circle text-danger fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 mb-0">Web Moderna</h4>
+                                    <small class="text-muted subtitle-text">Estándar Actual</small>
+                                </div>
+                            </div>
+                            <p class="card-text">HTML5 introdujo nuevas etiquetas semánticas, multimedia y APIs para
+                                mejorar la interactividad y funcionalidad web, convirtiéndose en el estándar actual.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">Semántica</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Multimedia</span>
+                                <span class="badge bg-light text-dark mb-1">APIs</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted footer-text"><i class="bi bi-stars me-1"></i>Estándar
+                                Actual</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea de tiempo -->
+            <div class="mt-5 pt-5">
+                <h3 class="text-center mb-4">Línea de tiempo de las versiones</h3>
+                <div class="timeline">
+                    <div class="row g-0">
+                        <div class="col-2 text-center">
+                            <div class="bg-secondary text-white p-2 rounded">1991</div>
+                            <div class="small mt-1">HTML 1.0</div>
+                        </div>
+                        <div class="col-2 text-center">
+                            <div class="bg-primary text-white p-2 rounded">1995</div>
+                            <div class="small mt-1">HTML 2.0</div>
+                        </div>
+                        <div class="col-2 text-center">
+                            <div class="bg-info text-white p-2 rounded">1997</div>
+                            <div class="small mt-1">HTML 3.2</div>
+                        </div>
+                        <div class="col-2 text-center">
+                            <div class="bg-success text-white p-2 rounded">1999</div>
+                            <div class="small mt-1">HTML 4.01</div>
+                        </div>
+                        <div class="col-2 text-center">
+                            <div class="bg-warning text-dark p-2 rounded">2000</div>
+                            <div class="small mt-1">XHTML 1.0</div>
+                        </div>
+                        <div class="col-2 text-center">
+                            <div class="bg-danger text-white p-2 rounded">2014</div>
+                            <div class="small mt-1">HTML5</div>
+                        </div>
+                    </div>
+                    <div class="progress mt-3" style="height: 10px;">
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 10%"></div>
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 15%"></div>
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 10%"></div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 15%"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%"></div>
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estadísticas -->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-calendar-range text-primary fs-1 mb-3"></i>
+                            <h4>23 años</h4>
+                            <p class="text-muted stats-text">De HTML 1.0 a HTML5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-tags text-success fs-1 mb-3"></i>
+                            <h4>100+ etiquetas</h4>
+                            <p class="text-muted stats-text">En HTML5 vs 20 en HTML 1.0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-arrow-up-right-circle text-danger fs-1 mb-3"></i>
+                            <h4>6 versiones</h4>
+                            <p class="text-muted stats-text">Principales hasta ahora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Evolución de HTML</h5>
+                    <p>Un recorrido por la historia y desarrollo del lenguaje fundamental de la web.</p>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="themeSwitch">
+                        <label class="form-check-label" for="themeSwitch">Modo oscuro</label>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© @dbgiler - 2025</p>
+                    <p class="text-muted small">Sitio desarrollado con Bootstrap 5</p>
+                    <p class="small">Tema actual: <span id="currentTheme">claro</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript para cambio de tema CORREGIDO -->
+    <script>
+        // Sistema de cambio de tema usando solo clases de Bootstrap
+        const themeToggle = document.getElementById('themeToggle');
+        const themeSwitch = document.getElementById('themeSwitch');
+        const currentThemeSpan = document.getElementById('currentTheme');
+        const body = document.getElementById('body');
+        const navbar = document.getElementById('navbar');
+        const footer = document.getElementById('footer');
+        const pageHeader = document.getElementById('pageHeader');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+
+        // Función para aplicar el tema oscuro
+        function applyDarkTheme() {
+            // Cambiar body
+            body.classList.remove('bg-light', 'text-dark');
+            body.classList.add('bg-dark', 'text-light');
+
+            // Cambiar navbar
+            navbar.classList.remove('navbar-light', 'bg-light');
+            navbar.classList.add('navbar-dark', 'bg-dark');
+
+            // Cambiar enlaces de navegación
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-dark');
+                link.classList.add('text-light');
+            });
+
+            // Cambiar footer
+            footer.classList.remove('bg-light');
+            footer.classList.add('bg-dark');
+
+            // Cambiar header de página
+            pageHeader.classList.remove('bg-primary');
+            pageHeader.classList.add('bg-dark');
+
+            // Cambiar todos los textos que son text-muted
+            const mutedTexts = document.querySelectorAll('.text-muted');
+            mutedTexts.forEach(text => {
+                // Solo cambiar si no es el subtítulo especial
+                if (!text.classList.contains('subtitle-text')) {
+                    text.classList.remove('text-muted');
+                    text.classList.add('text-light');
+                }
+            });
+
+            // Cambiar subtítulos (Fundacional, Interactividad, etc.)
+            const subtitleTexts = document.querySelectorAll('.subtitle-text');
+            subtitleTexts.forEach(text => {
+                text.classList.remove('text-muted');
+                text.classList.add('text-light', 'opacity-75');
+            });
+
+            // Cambiar textos del footer de las cards
+            const footerTexts = document.querySelectorAll('.footer-text');
+            footerTexts.forEach(text => {
+                text.classList.remove('text-muted');
+                text.classList.add('text-light', 'opacity-75');
+            });
+
+            // Cambiar textos de estadísticas
+            const statsTexts = document.querySelectorAll('.stats-text');
+            statsTexts.forEach(text => {
+                text.classList.remove('text-muted');
+                text.classList.add('text-light', 'opacity-75');
+            });
+
+            // Cambiar badges
+            const badges = document.querySelectorAll('.badge');
+            badges.forEach(badge => {
+                if (badge.classList.contains('bg-light') && badge.classList.contains('text-dark')) {
+                    badge.classList.remove('bg-light', 'text-dark');
+                    badge.classList.add('bg-secondary', 'text-light');
+                }
+            });
+
+            // Cambiar cards generales
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                // Solo cambiar cards que no son de versiones (que ya tienen colores específicos)
+                if (!card.classList.contains('version-card') &&
+                    !card.classList.contains('bg-secondary') &&
+                    !card.classList.contains('bg-primary') &&
+                    !card.classList.contains('bg-info') &&
+                    !card.classList.contains('bg-success') &&
+                    !card.classList.contains('bg-warning') &&
+                    !card.classList.contains('bg-danger')) {
+                    card.classList.remove('bg-white', 'bg-light');
+                    card.classList.add('bg-dark', 'text-light');
+                }
+            });
+
+            // Cambiar cards de versiones (solo el cuerpo)
+            const versionCards = document.querySelectorAll('.version-card');
+            versionCards.forEach(card => {
+                const cardBody = card.querySelector('.card-body');
+                const cardFooter = card.querySelector('.card-footer');
+
+                if (cardBody) {
+                    cardBody.classList.remove('bg-white');
+                    cardBody.classList.add('bg-dark', 'text-light');
+                }
+
+                if (cardFooter) {
+                    cardFooter.classList.remove('bg-transparent');
+                    cardFooter.classList.add('bg-dark');
+                }
+            });
+
+            // Cambiar botón de tema
+            themeToggle.classList.remove('btn-outline-secondary');
+            themeToggle.classList.add('btn-outline-light');
+
+            // Cambiar íconos
+            sunIcon.classList.add('d-none');
+            moonIcon.classList.remove('d-none');
+
+            // Actualizar texto
+            if (currentThemeSpan) {
+                currentThemeSpan.textContent = 'oscuro';
+            }
+
+            // Guardar preferencia
+            localStorage.setItem('theme', 'dark');
+        }
+
+        // Función para aplicar el tema claro
+        function applyLightTheme() {
+            // Restaurar body
+            body.classList.remove('bg-dark', 'text-light');
+            body.classList.add('bg-light', 'text-dark');
+
+            // Restaurar navbar
+            navbar.classList.remove('navbar-dark', 'bg-dark');
+            navbar.classList.add('navbar-light', 'bg-light');
+
+            // Restaurar enlaces de navegación
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-light');
+                link.classList.add('text-dark');
+            });
+
+            // Restaurar footer
+            footer.classList.remove('bg-dark');
+            footer.classList.add('bg-light');
+
+            // Restaurar header de página
+            pageHeader.classList.remove('bg-dark');
+            pageHeader.classList.add('bg-primary');
+
+            // Restaurar todos los textos que son text-muted
+            const mutedTexts = document.querySelectorAll('.text-light');
+            mutedTexts.forEach(text => {
+                // Solo restaurar si no es el subtítulo especial
+                if (!text.classList.contains('subtitle-text')) {
+                    text.classList.remove('text-light');
+                    text.classList.add('text-muted');
+                }
+            });
+
+            // Restaurar subtítulos
+            const subtitleTexts = document.querySelectorAll('.subtitle-text');
+            subtitleTexts.forEach(text => {
+                text.classList.remove('text-light', 'opacity-75');
+                text.classList.add('text-muted');
+            });
+
+            // Restaurar textos del footer de las cards
+            const footerTexts = document.querySelectorAll('.footer-text');
+            footerTexts.forEach(text => {
+                text.classList.remove('text-light', 'opacity-75');
+                text.classList.add('text-muted');
+            });
+
+            // Restaurar textos de estadísticas
+            const statsTexts = document.querySelectorAll('.stats-text');
+            statsTexts.forEach(text => {
+                text.classList.remove('text-light', 'opacity-75');
+                text.classList.add('text-muted');
+            });
+
+            // Restaurar badges
+            const badges = document.querySelectorAll('.badge');
+            badges.forEach(badge => {
+                if (badge.classList.contains('bg-secondary') && badge.classList.contains('text-light')) {
+                    badge.classList.remove('bg-secondary', 'text-light');
+                    badge.classList.add('bg-light', 'text-dark');
+                }
+            });
+
+            // Restaurar cards generales
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (!card.classList.contains('version-card') &&
+                    !card.classList.contains('bg-secondary') &&
+                    !card.classList.contains('bg-primary') &&
+                    !card.classList.contains('bg-info') &&
+                    !card.classList.contains('bg-success') &&
+                    !card.classList.contains('bg-warning') &&
+                    !card.classList.contains('bg-danger')) {
+                    card.classList.remove('bg-dark', 'text-light');
+                    card.classList.add('bg-white');
+                }
+            });
+
+            // Restaurar cards de versiones
+            const versionCards = document.querySelectorAll('.version-card');
+            versionCards.forEach(card => {
+                const cardBody = card.querySelector('.card-body');
+                const cardFooter = card.querySelector('.card-footer');
+
+                if (cardBody) {
+                    cardBody.classList.remove('bg-dark', 'text-light');
+                    cardBody.classList.add('bg-white');
+                }
+
+                if (cardFooter) {
+                    cardFooter.classList.remove('bg-dark');
+                    cardFooter.classList.add('bg-transparent');
+                }
+            });
+
+            // Restaurar botón de tema
+            themeToggle.classList.remove('btn-outline-light');
+            themeToggle.classList.add('btn-outline-secondary');
+
+            // Restaurar íconos
+            sunIcon.classList.remove('d-none');
+            moonIcon.classList.add('d-none');
+
+            // Actualizar texto
+            if (currentThemeSpan) {
+                currentThemeSpan.textContent = 'claro';
+            }
+
+            // Guardar preferencia
+            localStorage.setItem('theme', 'light');
+        }
+
+        // Función para alternar entre temas
+        function toggleTheme() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+
+            if (currentTheme === 'light') {
+                applyDarkTheme();
+            } else {
+                applyLightTheme();
+            }
+        }
+
+        // Cargar tema guardado
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+
+            if (savedTheme === 'dark') {
+                applyDarkTheme();
+                if (themeSwitch) themeSwitch.checked = true;
+            } else {
+                applyLightTheme();
+                if (themeSwitch) themeSwitch.checked = false;
+            }
+        }
+
+        // Event Listeners
+        if (themeToggle) {
+            themeToggle.addEventListener('click', toggleTheme);
+        }
+
+        if (themeSwitch) {
+            themeSwitch.addEventListener('change', toggleTheme);
+        }
+
+        // Cargar tema al iniciar
+        document.addEventListener('DOMContentLoaded', loadTheme);
+
+        // Tecla de acceso rápido (Alt+T)
+        document.addEventListener('keydown', function (e) {
+            if (e.altKey && e.key === 't') {
+                e.preventDefault();
+                toggleTheme();
+
+                // Mostrar notificación temporal
+                showThemeNotification();
+            }
+        });
+
+        // Función para mostrar notificación
+        function showThemeNotification() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            const themeName = currentTheme === 'dark' ? 'oscuro' : 'claro';
+
+            // Crear elemento de notificación
+            const notification = document.createElement('div');
+            notification.className = `position-fixed bottom-0 end-0 m-3 p-3 rounded shadow ${currentTheme === 'dark' ? 'bg-dark text-light' : 'bg-light text-dark'
+                }`;
+            notification.style.zIndex = '1050';
+            notification.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-palette-fill me-2 fs-4"></i>
+                    <div>
+                        <strong>Tema cambiado</strong>
+                        <p class="mb-0">Modo ${themeName} activado</p>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(notification);
+
+            // Eliminar después de 3 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
