@@ -183,7 +183,7 @@ function setupKeyboardShortcut() {
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', initThemeSystem);
 
-// Exportar funciones para uso global (si es necesario)
+// Exportar funciones para uso global
 window.themeSystem = {
     toggleTheme,
     applyTheme,
